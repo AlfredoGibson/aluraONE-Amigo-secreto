@@ -130,8 +130,8 @@ button:hover { transform: scale(1.1); background: linear-gradient(45deg, #ff3366
 #listaAmigos, #resultado {
     max-height: 200px;  /* Ajusta la altura máxima */
     overflow-y: auto;   /* Habilita el scroll vertical */
-    padding: 0.5rem;
+    padding: 1rem;
     border: 2px solid #ddd;
-    border-radius: 8px;
+    border-radius: 29px;
     background: #fff;
 }
