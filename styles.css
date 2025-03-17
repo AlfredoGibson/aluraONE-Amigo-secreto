@@ -128,10 +128,10 @@ button:hover { transform: scale(1.1); background: linear-gradient(45deg, #ff3366
     100% { transform: translateY(100vh) translateX(0) rotate(720deg); }
 }
 #listaAmigos, #resultado {
-    max-height: 400px;  /* Ajusta la altura máxima */
+    max-height: 800px;  /* Ajusta la altura máxima */
     overflow: auto;   /* Habilita el scroll vertical */
-    padding: 1rem;
-    border: 2px solid #ddd;
-    border-radius: 29px;
+    padding: 9rem;
+    border: 10px solid #ddd;
+    border-radius: 59px;
     background: #fff;
 }
