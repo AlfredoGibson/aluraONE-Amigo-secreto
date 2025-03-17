@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    
+    <!-- Fuente personalizada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Íconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎁 Amigo Secreto 🎉</h1>
+
+        <!-- Input para agregar nombres -->
+        <div class="input-group">
+            <input type="text" id="amigo" placeholder="Nombre del participante">
+            <button id="add" class="btn add-btn">➕ Agregar</button>
+        </div>
+
+        <!-- Lista de participantes -->
+        <div id="listaAmigos"></div>
+
+        <!-- Botón para sortear -->
+        <button id="sortear" class="btn sort-btn">🎲 Sortear</button>
+
+        <!-- Resultado del sorteo -->
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
