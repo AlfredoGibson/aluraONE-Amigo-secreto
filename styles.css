@@ -135,3 +135,15 @@ button:hover { transform: scale(1.1); background: linear-gradient(45deg, #ff3366
     border-radius: 59px;
     background: #fff;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: auto; /* Permite el scroll vertical */
+}
+
+.contenedor {
+    min-height: 200vh; /* Asegúrate de que sea al menos el doble de la altura de la ventana */
+    padding: 20px;
+    background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
+}
