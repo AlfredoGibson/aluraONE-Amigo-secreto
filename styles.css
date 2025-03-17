@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;700&display=swap');
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ff758c, #ff7eb3);
     display: flex;
@@ -10,7 +8,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    overflow: hidden;
+    overflow-y: auto; /* Permite el scroll vertical */
 }
 
 .container {
@@ -22,6 +20,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     border: 4px solid #ff5f7e;
     animation: fadeIn 0.8s ease-out;
+    min-height: 200vh; /* Asegúrate de que sea al menos el doble de la altura de la ventana */
 }
 
 @keyframes fadeIn {
@@ -47,7 +46,10 @@ input {
     text-align: center;
 }
 
-input:focus { outline: none; border-color: #ff5f7e; }
+input:focus {
+    outline: none;
+    border-color: #ff5f7e;
+}
 
 button {
     background: linear-gradient(45deg, #ff477e, #ff3366);
@@ -64,7 +66,10 @@ button {
     box-shadow: 0 5px 15px rgba(255, 71, 126, 0.4);
 }
 
-button:hover { transform: scale(1.1); background: linear-gradient(45deg, #ff3366, #ff477e); }
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff3366, #ff477e);
+}
 
 .friend {
     display: flex;
@@ -78,7 +83,9 @@ button:hover { transform: scale(1.1); background: linear-gradient(45deg, #ff3366
     transition: background 0.3s;
 }
 
-.friend:hover { background: #e9ecef; }
+.friend:hover {
+    background: #e9ecef;
+}
 
 .remove-btn {
     background: none;
@@ -89,7 +96,10 @@ button:hover { transform: scale(1.1); background: linear-gradient(45deg, #ff3366
     transition: transform 0.2s, color 0.2s;
 }
 
-.remove-btn:hover { color: #ff1a1a; transform: scale(1.2); }
+.remove-btn:hover {
+    color: #ff1a1a;
+    transform: scale(1.2);
+}
 
 .result-pair {
     background: #c1f0c1;
@@ -104,11 +114,17 @@ button:hover { transform: scale(1.1); background: linear-gradient(45deg, #ff3366
     transition: background 0.3s;
 }
 
-.result-pair:hover { background: #a8e5a8; }
+.result-pair:hover {
+    background: #a8e5a8;
+}
 
-.result-pair span { margin: 0 0.5rem; }
+.result-pair span {
+    margin: 0 0.5rem;
+}
 
-.result-show { margin-top: 1.5rem; }
+.result-show {
+    margin-top: 1.5rem;
+}
 
 .confetti {
     position: fixed;
@@ -127,23 +143,13 @@ button:hover { transform: scale(1.1); background: linear-gradient(45deg, #ff3366
     75% { transform: translateY(75vh) translateX(-10vw) rotate(540deg); }
     100% { transform: translateY(100vh) translateX(0) rotate(720deg); }
 }
-#listaAmigos, #resultado {
-    max-height: 800px;  /* Ajusta la altura máxima */
-    overflow: auto;   /* Habilita el scroll vertical */
-    padding: 9rem;
-    border: 10px solid #ddd;
-    border-radius: 59px;
-    background: #fff;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    overflow-y: auto; /* Permite el scroll vertical */
-}
 
-.contenedor {
-    min-height: 200vh; /* Asegúrate de que sea al menos el doble de la altura de la ventana */
-    padding: 20px;
-    background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
+#listaAmigos, #resultado {
+    max-height: 400px;  /* Ajusta la altura máxima */
+    overflow-y: auto;   /* Habilita el scroll vertical */
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    margin: 1rem 0; /* Espaciado entre los divs */
 }
